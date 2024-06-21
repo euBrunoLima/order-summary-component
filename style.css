@@ -1,0 +1,124 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0%;
+    font-family: "Red Hat Display",sans-serif;
+}
+body{
+    /*background-color: hsl(225, 100%, 94%);*/
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0.8rem;
+    background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg);
+    background-repeat:repeat-x;
+}
+
+main{
+    background-color: #fff;
+    max-width: 416px;
+    border-radius: 1rem;
+}
+#img-main > img{
+    width: 100%;
+    border-radius: 1rem 1rem 0px 0px;
+}
+main > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    max-width: 300px;
+    margin: auto;
+
+}
+main section h1{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: hsl(223, 47%, 23%);
+
+}
+main > section > span{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.imformation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1rem;
+    
+
+}
+.imformation-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -5.3rem;
+    justify-content:center ;
+    width: auto;
+    
+}
+
+.imformation > a{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%)
+}
+.imformation > a:hover{
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#music-icon{
+    max-width:48px;
+}
+#music-icon > img{
+    width: 100%;
+}
+@media (max-width: 376px) {
+    .imformation #music-icon img {
+        display: none;
+    }
+    .imformation-price{
+        margin-left: 0rem;
+    }
+
+}
+
+button{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    background-color:  hsl(245, 75%, 52%);
+    box-shadow: 0px 18px 18px hsla(245, 75%, 52%, 0.158);
+    
+}
+button:hover{
+    background-color: #7165ed;
+    transition: background-color 0.3s;
+}
+section > a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+section > a:hover{
+    color: hsl(223, 47%, 23%);
+    transition: all 0.3s;
+}
